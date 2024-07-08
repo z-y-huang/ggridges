@@ -492,6 +492,10 @@ GeomDensityRidges <- ggproto("GeomDensityRidges", GeomRidgeline,
       params$panel_scaling <- TRUE
     }
 
+
+    # ZH changes
+    params$panel_scaling <- FALSE
+    
     # calculate internal scale
     yrange = max(data$y) - min(data$y)
     n = length(unique(data$y))
